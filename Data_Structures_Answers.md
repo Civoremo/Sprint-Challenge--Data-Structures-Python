@@ -31,4 +31,4 @@ Using BST
 O(n) -> Indefinite number of duplicates
 
 Using set
-O(1) -> size is chosen at initialization
+O(n) -> Size could grow with duplicates

@@ -32,6 +32,7 @@ f.close()
 #             duplicates.append(name_1)
 
 # --- results in under 1 hundreth of sec
+# names = set(names_1).intersection(set(names_2))
 names = set(names_1) & set(names_2)
 duplicates = [None]*len(names)
 for index, name in enumerate(names):
