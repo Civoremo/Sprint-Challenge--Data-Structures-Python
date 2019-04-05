@@ -33,9 +33,9 @@ f.close()
 
 # --- results in under 1 hundreth of sec
 names = set(names_1) & set(names_2)
-duplicates = []*len(names)
-for name in names:
-    duplicates.append(name)
+duplicates = [None]*len(names)
+for index, name in enumerate(names):
+    duplicates[index] = name
 
 end_time = time.time()
 print (f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")
